@@ -1,0 +1,13 @@
+clear
+clc
+t = 1.5:0.0001:2;
+y1 = 1-sqrt(2)*exp(-sqrt(2)/2*t).*sin(3.536*t+pi/4);
+plot(t,y1)
+hold
+grid on
+y2 = 1 + sqrt(2)*exp(-sqrt(2)/2*t*5);
+plot(t,y2)
+y3 = 1 - sqrt(2)*exp(-sqrt(2)/2*t*5);
+plot(t,y3)
+xlabel('t')
+ylabel('y')
